@@ -41,12 +41,17 @@ article:nth-child(5) {
   background-color: #801638;
 }
 
+article:nth-child(6) {
+  background-color: #168029;
+}
+
 article {
   height: 100%;
   flex: 1 1 25%;
   text-align: center;
   color: #fff;
   text-decoration: none;
+  overflow: hidden;
   vertical-align: bottom;
   box-sizing: border-box;
   padding: 2vh 1vw;
@@ -54,6 +59,7 @@ article {
 }
 article:hover {
   flex: 1 1 150%;
+  overflow-y: auto;
 }
 article:hover > div {
   opacity: 1;
@@ -104,8 +110,12 @@ article div {
 }
 article div p,
 article div div h2,
-article div h3 {
+article div h3,
+article div a {
   margin: 0 0 1em 0;
+}
+article div p {
+  font-size: 35px;
 }
 
 h1,
@@ -116,9 +126,27 @@ h5,
 h6 {
   text-transform: uppercase;
   text-transform: uppercase;
+  font-size: 50px;
 }
 
-article div {
-  max-height: calc(100% - 28vh);
-  overflow-y: auto;
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.inner-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #fff;
+}
+a:hover {
+  text-decoration: underline;
 }
