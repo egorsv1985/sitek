@@ -1,0 +1,174 @@
+body,
+body > * {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  transition: all 0.3s ease 0s;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+article:nth-child(1) {
+  background-color: #c22326;
+}
+
+article:nth-child(2) {
+  background-color: #f37338;
+}
+
+article:nth-child(3) {
+  background-color: #fdb632;
+}
+
+article:nth-child(4) {
+  background-color: #027878;
+}
+
+article:nth-child(5) {
+  background-color: #801638;
+}
+
+article:nth-child(6) {
+  background-color: #168029;
+}
+
+article {
+  height: 100%;
+  flex: 1 1 25%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px;
+}
+article:hover {
+  flex: 1 1 150%;
+  overflow-y: auto;
+}
+article:hover > div {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.3s;
+}
+article:hover > h2 {
+  opacity: 0;
+}
+article > h2 {
+  bottom: 2vh;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-size: 3vh;
+}
+article > h2 {
+  transform: rotate(90deg);
+  bottom: 23vh;
+  min-width: 12em;
+  text-align: left;
+  transform: rotate(-90deg);
+  transform-origin: 0 0 0;
+  opacity: 1;
+}
+
+div + div {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow: hidden;
+}
+div + div:hover article {
+  flex: initial;
+  width: 10%;
+}
+
+article > div {
+  opacity: 0;
+  transition: opacity 0.2s ease 0s;
+}
+
+article div {
+  text-align: left;
+}
+article div p,
+article div div h2,
+article div h3,
+article div a {
+  margin: 0 0 1em 0;
+}
+article div p {
+  font-size: 35px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.inner-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #fff;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  article div p {
+    font-size: 18px;
+  }
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 20px;
+  }
+  img {
+    width: 100%;
+  }
+  .logo {
+    height: 150px;
+  }
+  a {
+    font-size: 18px;
+  }
+}
