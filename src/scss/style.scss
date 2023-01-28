@@ -1,4 +1,3 @@
-
 body,
 body > * {
   margin: 0;
@@ -8,15 +7,15 @@ body > * {
 }
 html,
 body {
-	width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 * {
   transition: all 0.3s ease 0s;
 }
-.wrapper{
-	display: flex;
-    height: 100vh;
+.wrapper {
+  display: flex;
+  height: 100vh;
 }
 article:nth-child(1) {
   background-color: #c22326;
@@ -33,19 +32,24 @@ article:nth-child(4) {
 article:nth-child(5) {
   background-color: #801638;
 }
+article:nth-child(6) {
+  background-color: #168029;
+}
 
 article {
-	height: 100%;
-    flex: 1 1 25%;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-    vertical-align: bottom;
-    box-sizing: border-box;
-    padding: 2vh 1vw;
-    position: relative;
+  height: 100%;
+  flex: 1 1 25%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding: 2vh 1vw;
+  position: relative;
   &:hover {
-	flex: 1 1 150%;
+    flex: 1 1 150%;
+    overflow-y: auto;
     > div {
       opacity: 1;
       transition: opacity 0.3s ease 0.3s;
@@ -92,13 +96,16 @@ article > div {
 }
 article div {
   text-align: left;
- 
+
   p,
   div h2,
-  h3 {
+  h3,
+  a {
     margin: 0 0 1em 0;
   }
- 
+  p {
+    font-size: 35px;
+  }
 }
 h1,
 h2,
@@ -108,8 +115,24 @@ h5,
 h6 {
   text-transform: uppercase;
   text-transform: uppercase;
+  font-size: 50px;
 }
-article div {
-  max-height: calc(100% - 28vh);
-  overflow-y: auto;
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+.inner-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #fff;
+  &:hover {
+    text-decoration: underline;
+  }
 }
