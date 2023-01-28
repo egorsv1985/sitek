@@ -54,8 +54,8 @@ article {
   overflow: hidden;
   vertical-align: bottom;
   box-sizing: border-box;
-  padding: 2vh 1vw;
   position: relative;
+  padding: 20px;
 }
 article:hover {
   flex: 1 1 150%;
@@ -125,7 +125,6 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
-  text-transform: uppercase;
   font-size: 50px;
 }
 
@@ -149,4 +148,24 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  article div p {
+    font-size: 18px;
+  }
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 20px;
+  }
+  img {
+    width: 100%;
+  }
+  .logo {
+    height: 150px;
+  }
 }
